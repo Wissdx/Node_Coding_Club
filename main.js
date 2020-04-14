@@ -9,45 +9,60 @@ else
     console.log("Tu es mineur !");
 }
 
-couleurs = ["bleu","rouge","vert","jaune","gris"];
+// couleurs = ["bleu","rouge","vert","jaune","gris"];
 
-var couleur = couleurs[Math.floor(Math.random()* couleurs.length)];
+// var couleur = couleurs[Math.floor(Math.random()* couleurs.length)];
 
-console.log(couleur);
+// switch (couleur){
+//     case "bleu":
+//         console.log("La couleur est bleue");
+//         break;
+    
+//     case "rouge":
+//         console.log("La couleur est rouge");
+//         break;
+    
+//     case "vert":
+//         console.log("La couleur est vert");
+//         break;
 
-if (couleur == "bleu")
-{
-    console.log("La couleur est bleue");
-}
-else if (couleur == "rouge")
-{
-    console.log("La couleur est rouge");
-}
-else if (couleur == "vert")
-{
-    console.log("La couleur est vert");
-}
-else if (couleur == "jaune")
-{
-    console.log("La couleur est jaune");
-}
-else if (couleur == "gris")
-{
-    console.log("La couleur est gris");
-}
+//     case "jaune":
+//         console.log("La couleur est jaune");
+//         break;
 
-switch (couleur){
-    case "bleu":
-        console.log("La couleur est bleue");
+//     case "gris":
+//         console.log("La couleur est gris");
+//         break;
+// }
+
+couleurs2 = ["bleu","rouge","vert","jaune"];
+
+for (let i; i<couleurs2.length; i++)
+{
+
+    var couleur3 = couleurs2[i];
+    console.log(couleur3);
+    
+    switch (i){
+
+        case "bleu":
+        console.log("La couleur à l'index " + i + " est bleue !");
         break;
     
-    case "rouge":
-        console.log("La couleur est rouge");
-        break;
-    
-    case "vert":
-        console.log("La couleur est vert");
-        break;
+        case "rouge":
+            console.log("La couleur " + i + " est rouge !");
+            break;
+        
+        case "vert":
+            console.log("La couleur " + i + " est vert !");
+            break;
 
-    case "jaune"
+        case "jaune":
+            console.log("La couleur " + i + " est jaune !");
+            break;
+
+        default:
+            console.log("La couleur n'était pas attendue !");
+    }
+
 }
