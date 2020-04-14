@@ -37,32 +37,40 @@ else
 
 couleurs2 = ["bleu","rouge","vert","jaune"];
 
-for (let i; i<couleurs2.length; i++)
+for (let i = 0; i<couleurs2.length; i++)
 {
 
     var couleur3 = couleurs2[i];
-    console.log(couleur3);
-    
-    switch (i){
+
+    switch (couleur3){
 
         case "bleu":
-        console.log("La couleur à l'index " + i + " est bleue !");
+        console.log("La couleur à l'index " + i + " est bleue !\n");
         break;
     
         case "rouge":
-            console.log("La couleur " + i + " est rouge !");
+            console.log("La couleur " + i + " est rouge !\n");
             break;
         
         case "vert":
-            console.log("La couleur " + i + " est vert !");
+            console.log("La couleur " + i + " est vert !\n");
             break;
 
         case "jaune":
-            console.log("La couleur " + i + " est jaune !");
+            console.log("La couleur " + i + " est jaune !\n");
             break;
 
         default:
-            console.log("La couleur n'était pas attendue !");
+            console.log("La couleur n'était pas attendue !\n");
     }
 
 }
+
+function addition(number1, number2)
+{
+    let result = number1 + number2;
+    let phraseresult = "L'addition de " + number1 + " et " + number2 + " donne " + result;
+    return phraseresult;
+}
+
+console.log(addition(3,5))
