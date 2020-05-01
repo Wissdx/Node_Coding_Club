@@ -8,4 +8,8 @@ class Personnage {
 		this.level = 1;
 	}
 
+	description(){
+		return `Le personnage ${this.name} possède ${this.health} PV, ${this.armor} points d'armure et ${this.strength} points de force.\nIl a ${this.xp} xp et ${this.level} niveau(x)`
+	}
+
 }
